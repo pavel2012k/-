@@ -1,0 +1,85 @@
+# -
+здесь с помощью платформы trinket созданы созвездия малой медведицы,треугольник и гончие псы
+from turtle import*
+speed(1000)
+
+def sky():
+  begin_fill()
+  goto(200,200)
+  for i in range(4):
+    right(90)
+    forward(400)
+  end_fill()
+  
+sky()
+goto(-100,-100)
+
+def star():#обычная звезда
+  begin_fill()
+  for i in range(5):
+    forward(15)
+    left(144)
+  end_fill()
+  
+def starbig():#полярная звезда и т.д.
+  begin_fill()
+  for i in range(5):
+    forward(30)
+    left(144)
+  end_fill()
+color("yellow")
+
+starbig()
+up()
+goto(-110,-50)
+down()
+
+star()
+up()
+goto(-35,-30)
+down()
+
+star()
+up()
+goto(0,-80)
+down()
+
+star()
+up()
+forward(65)
+down()
+
+star()
+up()
+right(25)
+forward(60)
+down()
+
+starbig()
+up()
+goto(50,50)
+down()
+
+star()
+up()
+backward(55)
+down()
+
+star()
+up()
+forward(55)
+right(135)
+forward(40)
+down()
+
+star()
+up()
+goto(-55,75)
+down()
+
+star()
+up()
+goto(-100,80)
+down()
+
+star()
